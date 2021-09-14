@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactsStyle.css">
+    <script src="httpsL//kit.fontawesome.com/c26cd2166c.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <script>
+        function validate(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var mess=document.getElementById("msg").value;
+            var expName=/^[a-zA-Z ]{2,100}$/;
+            var expEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var expMess=/^[a-zA-Z ]{10,200}$/;
+
+            if(!(expName.test(name)))
+                {
+                    document.getElementById("name").focus();
+                    alert("only alphabets is allowed");
+                }
+                else if(!(expEmail.test(email)))
+                {
+                    document.getElementById("email").focus();
+                    alert("Invalid email");
+                }
+                else if(!(expMess.test(mess)))
+                {
+                    document.getElementById("msg").focus();
+                    alert("min 20 words maximum 200 words");
+                }
+                else{
+                    alert("Final Submit")
+                }
+        }
+
+    </script>
+
+  </head>
+  <body>
+    <section class="contact py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row pb-3">
+                                <div class="col-lg-12">
+                                    <div class="head text-center text-white py-3">
+                                        <h3>Contact Us</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row pt-5">
+                            <div class="col-lg-5">
+                                <div class="row px-3">
+                                    <div class="col-lg-2">
+                                        <i class="fas fa-phone-volume"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <h6 class="font-weight-bold pt-2">Ring us</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="offset-1 col-lg-6">
+                                <div class="row px-3">
+                                    <div class="col-lg-2">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="col-lg-10">
+                                        <h6 class="font-weight-bold pt-2">Find us at</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="offset-1 col-lg-4">
+                                <p>Neha Kumari <br>
+                                +91 7878787878 <br>
+                                Mon-Fri,8:00-22:00</p>
+                            </div>
+                            <div class="offset-2 col-lg-5 pl-4">
+                                <p>Neosoft Technologies<br>
+                                    Indore, M.P<br>
+                                    India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form p-3">
+                            <div class="row my-5">
+                                <div class="col-lg-6">
+                                    <input type="text" class="effect-1" placeholder="Full Name" id="name">
+                                    <span class="focus-border"></span>
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" class="effect-1" placeholder="Your Email" id="email">
+                                    <span class="focus-border"></span>
+                                </div>
+                            </div>
+                            <div class="row pt-5">
+                                <div class="col-lg-12">
+                                    <input type="text" class="effect-1" placeholder="Your Message" id="msg">
+                                    <span class="focus-border"></span>       
+                            </div>
+                        </div>
+
+                        <div class="rowm pt-3">
+                            <div class="col-lg-6">
+                                <p><input type="checkbox"> I am not a robot</p>
+                            </div>
+                            <div class="offset-2 col-lg-4">
+                                <button class="btn1" onclick="validate()"><a href="home.html">Send Message</a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
